@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Code Journal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="grid.css" rel="stylesheet">
+        <link href="lib/highlight/styles/atom-one-dark.css" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>My Code Journal</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <section>
+                        <h3><time datetime="2017-04-18">04/18/2017</time></h3>
+                        <article>
+                            <h4>Reduce function</h4>
+                            <p>This function can be used on any object that extends the Iterator object... The output of this function is a single value, which is why it is called 'reduce'.</p>
+                            <pre><code>
+                                let numbers = [1,2,3,4,5,6,7,8,9];
+                                let sum = (a, b) => {
+                                    return a + b;
+                                };
+                                numbers.reduce((a,b) => sum(a,b));
+                            </code></pre>
+                            <h5>Reources</h5>
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">MDN - Reduce</a></li>
+                            </ul>
+                        </article>
+                    <hr/>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <script src="lib/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
